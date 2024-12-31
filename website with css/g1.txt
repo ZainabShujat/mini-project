@@ -1,0 +1,40 @@
+<html>
+<head><title>aisv@INFO/ACTIVITIES</title></head>
+<body bgcolor="yellow">
+<center><h1><u>
+PRERNA DIWAS CELEBRATIONS</u></h1><font="4">
+The school celebrated the birthday of Dr (Mrs) Amita Chauhan, Chairperson, Amity Group of Schools and RBEF as Prerna Diwas<br>
+on April 27, 2017. Students participated in number of STEM activities to generate curiosity and innovation towards environment and technology. The <br>students also got an opportunity to interact with Chairperson and gain wisdom from her life experiences.</font><br>
+<img src="p1.jpg"length="40%width="40%"><br>
+<img src="p2.jpg"length="40%width="40%"><br>
+<h1><u>
+
+<a href="home.html">home<<</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+</html>
