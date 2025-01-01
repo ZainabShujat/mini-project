@@ -1,71 +1,81 @@
 <html>
-<head><title>aisv@info/admission_form</title>
-<link rel="stylesheet" href="style.css">
+<head>
+  <title>aisv@info/admission_form</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateForm() {
+      var fname = document.forms["admissionForm"]["fname"].value;
+      var lname = document.forms["admissionForm"]["lname"].value;
+      var address = document.forms["admissionForm"]["address"].value;
+      var gender = document.forms["admissionForm"]["gender"].value;
+
+      if (fname == "" || lname == "" || address == "" || gender == "") {
+        alert("Please fill out the full form before submitting.");
+        return false; // Prevent form submission
+      }
+      return true; // Proceed with form submission
+    }
+
+    function checkFormAndRedirect(event) {
+      var fname = document.forms["admissionForm"]["fname"].value;
+      var lname = document.forms["admissionForm"]["lname"].value;
+      var address = document.forms["admissionForm"]["address"].value;
+      var gender = document.forms["admissionForm"]["gender"].value;
+
+      if (fname == "" || lname == "" || address == "" || gender == "") {
+        alert("Please fill out the full form before proceeding.");
+        event.preventDefault(); // Prevent the link from working
+      }
+    }
+  </script>
 </head>
 <body bgcolor="yellow">
-<font size="5" color="blue">
-<center>
-AMITY INTERNATIONAL SCHOOL<br>
-SECTOR-6 VASUNDHARA</font>
-<h2><u>ADMISSION FORM</u></h2>
-<form>FIRST NAME <input type="text"name="fname"><br>
-<br>
-<br>
-LAST NAME <input type="text"name="lname"><br>
-<BR>
-<BR>
-ADDRESS<br>
-<input type="text"name="address"><br>
-<BR>
-<BR>
-GENDER<br>
-<BR>
-<input type="radio"name="gender">MALE<BR>
-<BR>
-<input type="radio"name="gender">FEMALE<BR>
-<BR>
-<BR>
-CLASS<select>
-<option value="ps">amiown(playschool)</option>
-<option value="nur">nursery</option>
-<option value="prep">preparatory</option>
-<option value="1">class 1</option>
-<option value="2">class 2</option>
-<option value="3">class 3</option>
-<option value="4">class 4</option>
-<option value="5">class 5</option>
-<option value="6">class 6</option>
-<option value="7">class 7</option>
-<option value="8">class 8</option>
-<option value="9">class 9</option>
-<option value="10">class 10</option>
-<option value="11">class 11</option>
-<option value="12">class 12</option>
-<option value="6">synchro 6</option>
-<option value="7">synchro7</option>
-<option value="8">synchro 8</option>
-<option value="9>synchro9</option>
-<option value="10">synchro 10</option>
-<option value="11">synchro 11</option>
-<option value="12">synchro 12</option>
-</select><br>
-
-<br>
-<br>
-<input type="submit" value="CLEAR">
-<br>
-<U>OR</U>
-<br>
-<A HREF="f.html"><IMG SRC="W.JPG"BORDER="2"WIDTH="10%"LENGTH="15%"></A>
-<BR>
-<BR>
-<BR>
-<BR>
-<B><U>TO THE STUDENTS:</U></B><BR>
-FOR ANY DETAILS OF THE SCHOOL VISIT THE <BR>FOLLOWING WEBSITE:-<BR>
-<a href="home.html">WWW.AISV6@INFO.COM</a>
-</center>
-</form>
+  <font size="5" color="blue">
+    <center>
+      AMITY INTERNATIONAL SCHOOL<br>
+      SECTOR-6 VASUNDHARA</font>
+  <h2><u>ADMISSION FORM</u></h2>
+  <form name="admissionForm" onsubmit="return validateForm()">
+    FIRST NAME <input type="text" name="fname"><br><br><br>
+    LAST NAME <input type="text" name="lname"><br><br><br>
+    ADDRESS<br>
+    <input type="text" name="address"><br><br><br>
+    GENDER<br><br>
+    <input type="radio" name="gender" value="male">MALE<br><br>
+    <input type="radio" name="gender" value="female">FEMALE<br><br><br>
+    CLASS
+    <select>
+      <option value="ps">amiown(playschool)</option>
+      <option value="nur">nursery</option>
+      <option value="prep">preparatory</option>
+      <option value="1">class 1</option>
+      <option value="2">class 2</option>
+      <option value="3">class 3</option>
+      <option value="4">class 4</option>
+      <option value="5">class 5</option>
+      <option value="6">class 6</option>
+      <option value="7">class 7</option>
+      <option value="8">class 8</option>
+      <option value="9">class 9</option>
+      <option value="10">class 10</option>
+      <option value="11">class 11</option>
+      <option value="12">class 12</option>
+      <option value="6">synchro 6</option>
+      <option value="7">synchro 7</option>
+      <option value="8">synchro 8</option>
+      <option value="9">synchro 9</option>
+      <option value="10">synchro 10</option>
+      <option value="11">synchro 11</option>
+      <option value="12">synchro 12</option>
+    </select><br><br><br>
+    <input type="submit" value="CLEAR"><br><br>
+    <U>OR</U><br>
+    <A HREF="f.html" onclick="checkFormAndRedirect(event)"><IMG SRC="W.JPG" BORDER="2" WIDTH="10%" LENGTH="15%"></A>
+    <br><br><br><br>
+    <B><U>TO THE STUDENTS:</U></B><br>
+    FOR ANY DETAILS OF THE SCHOOL VISIT THE<br>FOLLOWING WEBSITE:-<br>
+    <a href="home.html">WWW.AISV6@INFO.COM</a>
+  </center>
+  </form>
 </body>
 </html>
-
