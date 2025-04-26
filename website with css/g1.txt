@@ -9,7 +9,7 @@ on April 27, 2017. Students participated in number of STEM activities to generat
 <img src="p2.jpg"length="40%width="40%"><br>
 <h1><u>
 
-<a href="home.html">home<<</a>
+<a href="index.html">home<<</a>
 
 
 
